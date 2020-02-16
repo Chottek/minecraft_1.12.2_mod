@@ -4,6 +4,8 @@ import com.fox.foxmods.Main;
 import com.fox.foxmods.init.ModItems;
 import com.fox.foxmods.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.util.DamageSource;
 
@@ -15,14 +17,14 @@ public class ToolSword extends ItemSword implements IHasModel {
         setRegistryName(name);
         setCreativeTab(Main.foxToolsTab);
         setMaxStackSize(1);
-//        setDamage(DamageSource.causeArrowDamage());
-//        setDamage(new DamageSource(DamageSource.causeExplosionDamage()));
-
         ModItems.ITEMS.add(this);
     }
 
-    public void setEffectOnHit(){
-
+    public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving) {
+        par1ItemStack.damageItem(1, par3EntityLiving);
+        par3EntityLiving.setFire(10);
+        par3EntityLiving.setPosition(par3EntityLiving.getPosition().getX() - 10, par3EntityLiving.getPosition().getY() - 10, par3EntityLiving.getPosition().getZ() - 10);
+        return true;
     }
 
     @Override

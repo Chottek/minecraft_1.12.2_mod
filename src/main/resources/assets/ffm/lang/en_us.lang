@@ -11,6 +11,7 @@ tile.concrete_block.name=Block of Concrete
 //Tools
 item.concrete_sword.name=Concrete Sword
 item.concrete_pickaxe.name=Concrete PickAxe
+item.ebony_sword.name=Ebony Sword
 
 //Tabs
 itemGroup.foxmods=Fox Mod

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            " C ",
+            " C ",
+            " R "
+          ],
+  "key":
+  {
+    "C":
+    {
+      "item": "ffm:obsidian_ingot"
+    },
+    "R":
+    {
+      "item": "minecraft:stick",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "ffm:ebony_sword",
+    "count": 1
+  }
+}

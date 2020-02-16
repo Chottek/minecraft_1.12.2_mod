@@ -14,7 +14,6 @@ public class ConcreteBlock extends BlockBase {
         setResistance(15.0f);
         setHarvestLevel("pickaxe", 2);
         setLightLevel(1f);
-
     }
 
 }
