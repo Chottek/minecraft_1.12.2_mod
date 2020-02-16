@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "RRR",
+            "RWR",
+            "RRR"
+          ],
+  "key":
+  {
+    "R":
+    {
+      "item": "ffm:concrete_gem"
+    },
+    "W":
+    {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result":
+  {
+    "item": "ffm:concrete_block",
+    "count": 1
+  }
+}

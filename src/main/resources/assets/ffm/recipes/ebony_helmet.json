@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "CCC",
+            "CRC"
+          ],
+  "key":
+  {
+    "C":
+    {
+      "item": "ffm:obsidian_ingot"
+    },
+    "R":
+    {
+      "item": "minecraft:diamond_helmet",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "ffm:obsidian_helmet",
+    "count": 1
+  }
+}

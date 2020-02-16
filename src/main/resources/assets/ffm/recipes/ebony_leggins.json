@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "CRC",
+            "C C",
+            "C C"
+          ],
+  "key":
+  {
+    "C":
+    {
+      "item": "ffm:obsidian_ingot"
+    },
+    "R":
+    {
+      "item": "minecraft:diamond_leggings",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "ffm:obsidian_leggins",
+    "count": 1
+  }
+}

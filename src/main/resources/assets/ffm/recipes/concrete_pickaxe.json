@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "CCC",
+            " R ",
+            " R "
+          ],
+  "key":
+  {
+    "C":
+    {
+      "item": "ffm:concrete_ingot"
+    },
+    "R":
+    {
+      "item": "minecraft:stick",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "ffm:concrete_pickaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+
+//Items
+item.concrete_gem.name=Concrete Shard
+item.concrete_ingot.name=Concrete Ingot
+item.obsidian_ingot.name=Obsidian Ingot
+
+
+//Blocks
+tile.concrete_block.name=Block of Concrete
+
+//Tools
+item.concrete_sword.name=Concrete Sword
+item.concrete_pickaxe.name=Concrete PickAxe
+
+//Tabs
+itemGroup.foxmods=Fox Mod
+itemGroup.foxtoolstab=Fox Tools
+
+//Armor
+item.obsidian_helmet.name=Ebony Helmet
+item.obsidian_chestplate.name=Ebony Chestplate
+item.obsidian_leggins.name=Ebony Leggins
+item.obsidian_boots.name=Ebony Boots

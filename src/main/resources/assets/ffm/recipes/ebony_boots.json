@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "CRC",
+            "C C"
+          ],
+  "key":
+  {
+    "C":
+    {
+      "item": "ffm:obsidian_ingot"
+    },
+    "R":
+    {
+      "item": "minecraft:diamond_boots",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "ffm:obsidian_boots",
+    "count": 1
+  }
+}
