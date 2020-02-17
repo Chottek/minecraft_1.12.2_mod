@@ -5,8 +5,14 @@ item.concrete_ingot.name=Concrete Ingot
 item.obsidian_ingot.name=Obsidian Ingot
 
 
+//Food
+item.meat_hedgehog.name=Meat Hedgehog
+
+
 //Blocks
 tile.concrete_block.name=Block of Concrete
+tile.lamp_block.name=Lamp
+tile.light_path.name=Light Path
 
 //Tools
 item.concrete_sword.name=Concrete Sword

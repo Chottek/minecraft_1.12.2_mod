@@ -5,6 +5,7 @@ import com.fox.foxmods.proxy.CommonProxy;
 import com.fox.foxmods.tabs.FoxTab;
 import com.fox.foxmods.tabs.FoxToolsTab;
 import com.fox.foxmods.util.Reference;
+import com.fox.foxmods.vanilla.VanillaChanger;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -18,6 +19,7 @@ public class Main {
 
     public static FoxTab foxTab = new FoxTab("foxtab");
     public static FoxToolsTab foxToolsTab = new FoxToolsTab("foxtoolstab");
+    public static VanillaChanger vanillaChanger = new VanillaChanger();
 
     @Instance
     public static Main instance;

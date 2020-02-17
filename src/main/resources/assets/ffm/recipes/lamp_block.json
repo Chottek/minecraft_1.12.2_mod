@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "GGG",
+            "GRG",
+            "GGG"
+          ],
+  "key":
+  {
+    "G":
+    {
+      "item": "minecraft:glass_pane",
+      "data": 0
+    },
+    "R":
+    {
+      "item": "minecraft:redstone_torch",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "ffm:lamp_block",
+    "count": 1
+  }
+}

@@ -2,6 +2,7 @@ package com.fox.foxmods.init;
 
 import com.fox.foxmods.items.ItemBase;
 import com.fox.foxmods.items.armor.ArmorBase;
+import com.fox.foxmods.items.food.FoodBase;
 import com.fox.foxmods.items.tools.ToolPickAxe;
 import com.fox.foxmods.items.tools.ToolSword;
 import com.fox.foxmods.util.Reference;
@@ -20,7 +21,7 @@ import java.util.List;
 
 public class ModItems {
 
-    public static final List<Item> ITEMS = new ArrayList<Item>();
+    public static final List<Item> ITEMS = new ArrayList<>();
 
     //Materials
     public static final ToolMaterial MATERIAL_CONCRETE = EnumHelper.addToolMaterial("material_concrete", 3, 500, 8.0f, 4.0f, 10);
@@ -45,6 +46,7 @@ public class ModItems {
     public static final Item OBSIDIAN_LEGGINS = new ArmorBase("obsidian_leggins", ARMOR_MATERIAL_OBSIDIAN, 2, EntityEquipmentSlot.LEGS);
     public static final Item OBSIDIAN_SHOES = new ArmorBase("obsidian_boots", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.FEET);
 
-
+    //Food
+    public static final Item MEAT_HEDGEHOG = new FoodBase("meat_hedgehog", 8, false);
 
 }
