@@ -13,6 +13,7 @@ item.meat_hedgehog.name=Meat Hedgehog
 tile.concrete_block.name=Block of Concrete
 tile.lamp_block.name=Lamp
 tile.light_path.name=Light Path
+tile.light_fence.name=Light Fence
 
 //Tools
 item.concrete_sword.name=Concrete Sword

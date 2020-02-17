@@ -1,9 +1,6 @@
 package com.fox.foxmods.init;
 
-import com.fox.foxmods.blocks.BlockBase;
-import com.fox.foxmods.blocks.ConcreteBlock;
-import com.fox.foxmods.blocks.LampBlock;
-import com.fox.foxmods.blocks.LightPathBlock;
+import com.fox.foxmods.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -17,6 +14,7 @@ public class ModBlocks {
     public static final Block CONCRETE_BLOCK = new ConcreteBlock("concrete_block", Material.ROCK);
     public static final Block LAMP_BLOCK = new LampBlock("lamp_block", Material.GLASS);
     public static final Block LAMP_PAVEMENT_BLOCK = new LightPathBlock("light_path", Material.GROUND);
+    public static final Block LIGHT_FENCE = new BlockLightFence("light_fence");
 
 
 

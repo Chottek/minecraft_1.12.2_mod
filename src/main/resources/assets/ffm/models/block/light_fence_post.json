@@ -1,0 +1,6 @@
+{
+    "parent": "block/fence_post",
+    "textures": {
+      "texture": "ffm:blocks/concrete_block"
+    }
+}
