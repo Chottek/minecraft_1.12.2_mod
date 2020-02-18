@@ -5,7 +5,9 @@ import com.fox.foxmods.proxy.CommonProxy;
 import com.fox.foxmods.tabs.FoxTab;
 import com.fox.foxmods.tabs.FoxToolsTab;
 import com.fox.foxmods.util.Reference;
+import com.fox.foxmods.util.handlers.RenderGuiHandler;
 import com.fox.foxmods.vanilla.VanillaChanger;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -40,7 +42,7 @@ public class Main {
 
     @EventHandler
     public static void postInit(FMLPostInitializationEvent event){
-
+        MinecraftForge.EVENT_BUS.register(new RenderGuiHandler());
     }
 
 }

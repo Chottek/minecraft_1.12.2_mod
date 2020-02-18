@@ -1,7 +1,7 @@
 package com.fox.foxmods.init;
 
 import com.fox.foxmods.items.ItemBase;
-import com.fox.foxmods.items.armor.ArmorBase;
+import com.fox.foxmods.items.armor.*;
 import com.fox.foxmods.items.food.FoodBase;
 import com.fox.foxmods.items.tools.ToolMop;
 import com.fox.foxmods.items.tools.ToolPickAxe;
@@ -44,10 +44,10 @@ public class ModItems {
     public static final ItemSword MOP = new ToolMop("mop", ToolMaterial.WOOD);
 
     //Armor
-    public static final Item OBSIDIAN_HELMET = new ArmorBase("obsidian_helmet", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);
-    public static final Item OBSIDIAN_CHEST = new ArmorBase("obsidian_chestplate", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.CHEST);
-    public static final Item OBSIDIAN_LEGGINS = new ArmorBase("obsidian_leggins", ARMOR_MATERIAL_OBSIDIAN, 2, EntityEquipmentSlot.LEGS);
-    public static final Item OBSIDIAN_SHOES = new ArmorBase("obsidian_boots", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.FEET);
+    public static final Item OBSIDIAN_HELMET = new ObsidianHelmet("obsidian_helmet", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);
+    public static final Item OBSIDIAN_CHEST = new ObsidianChest("obsidian_chestplate", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.CHEST);
+    public static final Item OBSIDIAN_LEGGINS = new ObsidianLeggings("obsidian_leggins", ARMOR_MATERIAL_OBSIDIAN, 2, EntityEquipmentSlot.LEGS);
+    public static final Item OBSIDIAN_SHOES = new ObsidianBoots("obsidian_boots", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.FEET);
 
     //Food
     public static final Item MEAT_HEDGEHOG = new FoodBase("meat_hedgehog", 8, false);

@@ -29,8 +29,8 @@ public class ToolMop extends ItemSword implements IHasModel {
 
     private boolean isWet;
     private int wetCounter;
-    private List<EntityLivingBase> wetMobs;
-    private List<Integer> wetMobsTicks;
+    public static List<EntityLivingBase> wetMobs;
+    public static List<Integer> wetMobsTicks;
     private EntityLivingBase player;
 
 
@@ -105,12 +105,12 @@ public class ToolMop extends ItemSword implements IHasModel {
         tooltip.add("Impacted: " + wetMobs.size());
 
         if(wetMobsTicks.size() != 0)
-            tooltip.add("First Mob ticks: "+ wetMobsTicks.get(0));
+            tooltip.add("First Mob ticks: "+ wetMobsTicks.get(0)); //Info just for me
 
         super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 
-    private void tickWetMobs(){
+    public static void tickWetMobs(){
         if(wetMobs.size() <= 0)
             return;
 
