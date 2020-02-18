@@ -3,6 +3,7 @@ package com.fox.foxmods.init;
 import com.fox.foxmods.items.ItemBase;
 import com.fox.foxmods.items.armor.ArmorBase;
 import com.fox.foxmods.items.food.FoodBase;
+import com.fox.foxmods.items.tools.ToolMop;
 import com.fox.foxmods.items.tools.ToolPickAxe;
 import com.fox.foxmods.items.tools.ToolSword;
 import com.fox.foxmods.util.Reference;
@@ -39,6 +40,8 @@ public class ModItems {
     public static final ItemPickaxe CONCRETE_PICKAXE = new ToolPickAxe("concrete_pickaxe", MATERIAL_CONCRETE);
 
     public static final ItemSword EBONY_SWORD = new ToolSword("ebony_sword", MATERIAL_EBONY);
+
+    public static final ItemSword MOP = new ToolMop("mop", ToolMaterial.WOOD);
 
     //Armor
     public static final Item OBSIDIAN_HELMET = new ArmorBase("obsidian_helmet", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);

@@ -3,11 +3,11 @@ package com.fox.foxmods.items.tools;
 import com.fox.foxmods.Main;
 import com.fox.foxmods.init.ModItems;
 import com.fox.foxmods.util.IHasModel;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
-import net.minecraft.util.DamageSource;
+import net.minecraft.util.EnumHand;
 
 public class ToolSword extends ItemSword implements IHasModel {
 
@@ -20,16 +20,25 @@ public class ToolSword extends ItemSword implements IHasModel {
         ModItems.ITEMS.add(this);
     }
 
-    public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving) {
-        par1ItemStack.damageItem(1, par3EntityLiving);
-        par3EntityLiving.setFire(10);
-        par3EntityLiving.setPosition(par3EntityLiving.getPosition().getX() - 10, par3EntityLiving.getPosition().getY() - 10, par3EntityLiving.getPosition().getZ() - 10);
-        return true;
-    }
 
     @Override
     public void registerModels() {
         Main.proxy.registerItemRenderer(this, 0, "inventory");
     }
 
+    @Override
+    public boolean itemInteractionForEntity(ItemStack stack, EntityPlayer playerIn, EntityLivingBase target, EnumHand hand) {
+        target.setGlowing(true);
+        target.setFire(10);
+
+        return true;
+    }
+
+    @Override
+    public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
+        target.setGlowing(true);
+        target.setFire(10);
+
+        return true;
+    }
 }

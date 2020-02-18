@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            " RR",
+            " WR",
+            "S  "
+          ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:stick",
+      "data": 0
+    },
+    "W":
+    {
+      "item": "minecraft:water_bucket",
+      "data": 0
+    },
+    "R":
+    {
+      "item": "minecraft:string",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "ffm:mop",
+    "count": 1
+  }
+}

@@ -19,6 +19,7 @@ tile.light_fence.name=Light Fence
 item.concrete_sword.name=Concrete Sword
 item.concrete_pickaxe.name=Concrete PickAxe
 item.ebony_sword.name=Ebony Sword
+item.mop.name=Mop
 
 //Tabs
 itemGroup.foxmods=Fox Mod
